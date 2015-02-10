@@ -7,7 +7,7 @@ angular.module 'flowershopApp'
       title: '主页',
       link: '/'
     },{
-      title: '挑选鲜花',
+      title: '鲜花订购',
       link: '/detail'
     },{
       title: '关于绿香',
