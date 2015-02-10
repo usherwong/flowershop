@@ -13,11 +13,11 @@ angular.module 'flowershopApp'
   	price: '196',
   	src: 'assets/images/mg/11mg.jpg'
   	},{
-  	name: '19支玫瑰·粉精装',
+  	name: '19支粉玫瑰精装',
   	price: '316',
   	src: 'assets/images/mg/19mgpink.jpg'
   	},{
-  	name: '19支玫瑰·红精装',
+  	name: '19支红玫瑰精装',
   	price: '316',
   	src: 'assets/images/mg/19mgred.jpg'
   	},{
@@ -49,15 +49,15 @@ angular.module 'flowershopApp'
   	}]
 
   $scope.items2 = [{
-  	name: '11玫瑰2朵百合',
+  	name: '11朵玫瑰2支百合',
   	price: '276',
   	src: 'assets/images/mgbh/11bh.jpg'
   	},{
-  	name: '19玫瑰百合',
+  	name: '19玫瑰2支百合',
   	price: '未知',
   	src: 'assets/images/mgbh/19bh.jpg'
   	},{
-  	name: '33玫瑰百合',
+  	name: '33玫瑰2支百合',
   	price: '未知',
   	src: 'assets/images/mgbh/33bh.jpg'
   	}]

@@ -7,10 +7,10 @@ angular.module 'flowershopApp'
 
   $scope.slides = [];
 
-  $scope.addSlide = (name) ->
+  $scope.addSlide = (name, str) ->
     $scope.slides.push({
       image: 'assets/images/' + name + '.jpg',
-      text: name
+      text: str
       })
 
   hideTheHeader = ->
@@ -18,8 +18,9 @@ angular.module 'flowershopApp'
 
   init = ->
     array = [0..3]
+    str = ['绿香是新疆第一家花店','绿香是新疆花卉行业中第一个注册的商标','绿香是巴州唯一花卉行业的知名商标','绿香花艺学校是新疆第一家花艺学校']
     for i in array
-      $scope.addSlide(i)
+      $scope.addSlide(i, str[i])
     $timeout(hideTheHeader, 3000)
 
   $scope.items = [{
