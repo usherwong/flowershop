@@ -1,0 +1,17 @@
+<div class="myNavbar" ng-include="'components/navbar/navbar.html'"></div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-3 detail" ng-repeat="item in items track by $index">
+			<div class="size-control1">
+				<img src="{{item.src}}">
+			</div>
+			<div class="info">
+				<div>名称: {{item.name}}</div>
+				<div>价格: {{item.price}}￥</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="myNavbar" ng-include="'components/copyright.html'"></div>

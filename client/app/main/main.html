@@ -1,0 +1,35 @@
+<div class="myNavbar" ng-include="'components/navbar/navbar.html'"></div>
+
+<header class="hero-unit" id="banner" ng-hide="hidesoon">
+  <div class="container">
+    <h1>绿香花店</h1>
+    <p class="lead">预祝大家新年快乐,羊年大吉</p>
+    <img src="assets/images/yeoman.png" alt="welcome">
+  </div>
+</header>
+
+<div class="container mycarousel">
+  <div class="row">
+    <carousel interval="myInterval">
+      <slide ng-repeat="slide in slides" active="slide.active">
+        <img ng-src="{{slide.image}}" style="margin:auto;">
+        <div class="carousel-caption">
+          <h4>Slide {{$index}}</h4>
+          <p>{{slide.text}}</p>
+        </div>
+      </slide>
+    </carousel>
+  </div>
+</div>
+
+<div class="container marketing">
+  <div class="row">
+    <div class="col-lg-6" ng-repeat="item in items">
+      <h2>{{item.name}}</h2>
+      <p>{{item.details}}</p>
+      <!-- <p><a class="btn btn-default" href="{{item.targetHref}}" role="button">{{item.shotcut}} »</a></p> -->
+      <img class="" src="{{item.imgsrc}}" alt="" style="width: 200px; height: 200px;">
+    </div><!-- /.col-lg-4 -->
+</div>
+
+<div class="myNavbar" ng-include="'components/copyright.html'"></div>
